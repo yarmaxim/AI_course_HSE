@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalGenius — ИИ‑платформа для локального бизнеса</title>
+    <meta name="description" content="Сайт, SEO, бронирование и AI‑оператор за 5 минут для локального бизнеса" />
+    <meta name="theme-color" content="#0b0c10" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="LocalGenius — ИИ‑платформа для локального бизнеса" />
+    <meta property="og:description" content="Сайт, SEO, бронирование и AI‑оператор за 5 минут" />
+    <meta property="og:image" content="https://og-playground.vercel.app/api/card?title=LocalGenius&desc=Сайт%2C%20SEO%2C%20бронирование%2C%20AI" />
+    <link rel="icon" href="./assets/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="LocalGenius">
+          <img src="./assets/logo.svg" alt="LocalGenius" width="28" height="28" />
+          <span>LocalGenius</span>
+        </a>
+        <nav class="nav-links" aria-label="Главная навигация">
+          <a href="#features">Возможности</a>
+          <a href="#pricing">Цены</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-cta">
+          <button id="theme-toggle" class="btn btn-ghost" aria-label="Переключить тему">🌗</button>
+          <a class="btn btn-primary" href="#cta">Попробовать бесплатно</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <div class="container hero-wrap">
+        <div class="hero-copy">
+          <h1>Сайт, SEO и онлайн‑запись за 5 минут с ИИ</h1>
+          <p class="subtitle">Привлекайте клиентов из поиска и мессенджеров. AI‑оператор отвечает 24/7.</p>
+          <form id="lead-form" class="lead-form" aria-label="Форма генерации демо">
+            <input type="text" name="business" placeholder="Тип бизнеса (например, салон красоты)" aria-label="Тип бизнеса" required />
+            <input type="text" name="city" placeholder="Город / район" aria-label="Город или район" required />
+            <input type="email" name="email" placeholder="E‑mail" aria-label="Электронная почта" required />
+            <button type="submit" class="btn btn-primary">Создать демо‑сайт</button>
+          </form>
+          <small class="muted">Без карты. Демо откроется в новой вкладке.</small>
+          <div class="trust">
+            <span class="badge">Core Web Vitals: green</span>
+            <span class="badge">SEO‑готовность</span>
+            <span class="badge">GDPR‑friendly</span>
+          </div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Превью сгенерированного сайта">
+          <div class="mockup">
+            <div class="mockup-top"></div>
+            <div class="mockup-body"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section id="features" class="section features">
+        <div class="container">
+          <h2>Что входит</h2>
+          <div class="grid">
+            <div class="card feature">
+              <div class="icon">🧠</div>
+              <h3>ИИ‑генерация сайта</h3>
+              <p>Копирайт и дизайн под услуги. Редактор прямо в браузере.</p>
+            </div>
+            <div class="card feature">
+              <div class="icon">📈</div>
+              <h3>SEO‑страницы</h3>
+              <p>Кластеры «услуга + район/метро», карта и микроразметка.</p>
+            </div>
+            <div class="card feature">
+              <div class="icon">📅</div>
+              <h3>Онлайн‑бронирование</h3>
+              <p>Расписание, предоплата, напоминания в WhatsApp/SMS.</p>
+            </div>
+            <div class="card feature">
+              <div class="icon">🤖</div>
+              <h3>AI‑оператор 24/7</h3>
+              <p>Отвечает на вопросы, записывает и дожимает лиды.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section showcase">
+        <div class="container">
+          <h2>Как это выглядит</h2>
+          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1400&auto=format&fit=crop" alt="Пример адаптивного сайта" />
+        </div>
+      </section>
+
+      <section id="pricing" class="section pricing">
+        <div class="container">
+          <h2>Тарифы</h2>
+          <div class="grid pricing-grid">
+            <div class="card price">
+              <div class="price-name">Free</div>
+              <div class="price-value">0 ₽</div>
+              <ul>
+                <li>1 услуга</li>
+                <li>Базовый сайт</li>
+                <li>Форма лидов</li>
+              </ul>
+              <a href="#cta" class="btn btn-secondary">Начать</a>
+            </div>
+            <div class="card price price-popular">
+              <div class="badge badge-accent">Популярно</div>
+              <div class="price-name">Pro</div>
+              <div class="price-value">990 ₽/мес</div>
+              <ul>
+                <li>До 10 услуг</li>
+                <li>SEO‑страницы</li>
+                <li>Онлайн‑бронирование</li>
+              </ul>
+              <a href="#cta" class="btn btn-primary">Выбрать Pro</a>
+            </div>
+            <div class="card price">
+              <div class="price-name">Business</div>
+              <div class="price-value">2490 ₽/мес</div>
+              <ul>
+                <li>Без ограничений</li>
+                <li>AI‑оператор</li>
+                <li>Интеграции</li>
+              </ul>
+              <a href="#cta" class="btn btn-secondary">Связаться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <div class="grid testimonials-grid">
+            <div class="card quote">
+              <p>«За вечер получили 7 заявок с SEO‑страниц. Онбординг занял 4 минуты.»</p>
+              <span class="author">Анна, салон у дома</span>
+            </div>
+            <div class="card quote">
+              <p>«AI‑оператор закрыл 30% вопросов без участия администратора.»</p>
+              <span class="author">Игорь, студия йоги</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq">
+        <div class="container">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Это заменяет мой текущий сайт?</summary>
+            <p>Можно использовать как основной сайт или как набор SEO‑посадочных.</p>
+          </details>
+          <details>
+            <summary>Нужна карта для демо?</summary>
+            <p>Нет, демо бесплатно и без карты.</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta">
+        <div class="container">
+          <h2>Готовы попробовать?</h2>
+          <p>Введите бизнес и город — получите персонализированный демо‑сайт.</p>
+          <a class="btn btn-gradient" href="#" onclick="return window.generateDemo()">Сгенерировать демо</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <span>© 2025 LocalGenius</span>
+        <a href="https://github.com/yarmaxim/AI_course_HSE" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </footer>
+
+    <script src="./assets/app.js"></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"LocalBusiness","name":"LocalGenius","url":"https://yarmaxim.github.io/AI_course_HSE/","description":"Сайт, SEO, бронирование и AI‑оператор для локального бизнеса"}
+    </script>
+  </body>
+  </html>
+
+
